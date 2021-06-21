@@ -1,0 +1,350 @@
+/*=====Navegacion=====*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+   body{
+    background-color: #fff;   
+   } 
+   .contenedor{
+       width: 90%;
+       margin: auto;
+   }
+   header{
+       padding: 15px 0;
+       background-color: springgreen;
+   }
+   header .contenedor{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .contenedor img{
+       width: 150px;/*ancho*/
+       height: 50px;/*altura*/ 
+   }
+   header nav a{
+       color: #333;
+       text-decoration: none;
+       margin-right: 30px;
+       
+   }
+   header nav a:hover,
+   header nav a.activo {
+       background-color: #3ded47;
+       color: #333;
+       border-radius: 5px;
+   }
+
+   /*=====slider=====*/
+   .banner{
+       position: relative;
+       width: 100%;
+       height: calc(60vh - 50px);
+       background-color: #F5F5F5;
+       background-size: cover;
+       background-position: center;
+       transition: all .1s ease-in-out;
+       background-image: url('../Assets/img/pexels-czerrysh-ann-6606371.jpg');
+       animation: banner 10s infinite linear;
+   }
+   .banner-content{
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 100%;
+       color: #fff;
+       background-color: rgba(0, 22, 40, .6);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .banner-content h1{
+       margin: 0;
+       padding: 0;
+       padding-bottom: 10px;
+       font-size: 40px;
+       text-align: center;
+       color: #FFF;
+   }
+   .banner-content a{
+       text-decoration: none;
+       color: #fff;
+       padding: 9px 20px;
+       border: 1px solid #FFF;
+       text-transform: uppercase;
+       transition: all .3s ease-in-out;
+   }
+   .banner-content a:hover{
+       background-color: #fff;
+       color: #333;
+   }
+   @keyframes banner{
+       0%{
+           background-image: url('../images/trabajo1.png');  
+       }
+       25%{
+           background-image: url('../images/trabajo1.png');  
+       }
+       26%{
+           background-image: url('../images/trabajo2.jpg');  
+       }
+       50%{
+           background-image: url('../images/trabajo2.jpg');  
+       }
+       51%{
+           background-image: url('../images/trabajo3.jpg');  
+       }
+       75%{
+           background-image: url('../images/trabajo3.jpg');  
+       }
+       76%{
+           background-image: url('../images/img4.jpg');  
+       }
+       100%{
+           background-image: url('../images/img4.jpg');  
+       }
+   }
+/*contenido de los servicios*/
+.content-1{
+    width: 100%;
+    margin-top: 70px;
+}
+.details{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+.item-1{
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+.img{
+    width: 70px;
+}
+/*texto*/
+.content-2{
+    margin-top: 100px;
+}
+/**=====Welcome=====*/
+.welcome{
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px 0;
+}
+.title{
+    font-size: 25px;
+}
+.text{
+    font-size: 15px;
+    color: grey;
+    position: relative;
+}
+/*estilos de galeria*/
+.galeria-container-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 160px;
+    padding: 15px;
+    grid-gap: 0px;
+}
+.galeria-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .galeria-titulo{
+    position: absolute;
+    bottom: 1;
+    color: white;
+    text-align: center;
+    background: #333;
+    width: 30%;
+    margin: 0;
+    padding: 2px;
+    font-size: 10px;
+} */
+.galeria-item:nth-child(1){
+    grid-row-start: span 2;
+}
+/*texto*/
+
+.welcome-1{
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 0;
+}
+.title-1{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+/*pasos para conseguir trabajo */
+.content-2{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.details-2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 0px;
+}
+.item-2{
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+.img{
+    width: 70px;
+}
+/*footer*/
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+   /*===== Responsive de los menus (navegacion) =====*/
+   @media screen and (max-width: 800px){
+    header img{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    header .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*============RESPONSIVE DEL FOOTER=================*/
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
